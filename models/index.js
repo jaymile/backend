@@ -5,5 +5,5 @@ mongoose.Promise = global.Promise;
 const db = {};
 db.mongoose = mongoose;
 db.url = dbConfig.url
-db.immobillier = require("./Immobilier")(mongoose);
+db.immobillier = require("./Immobilier.models")(mongoose);
 module.exports = db;
