@@ -1,7 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require('mongoose');
-const dbConfig = require("./config/db.config");
 const app = require("./app")
 
 const db = require("./models")
@@ -24,8 +23,7 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
 
-
-mongoose.connect(db.url,
+  mongoose.connect(db.url,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
     .then(() => console.log('Connexion à MongoDB réussie !'))

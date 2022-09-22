@@ -1,4 +1,7 @@
+//const db = require("../models/Immobilier.models");
+//const Immobilier = db.immobilier;
 const Immobilier = require('../models/Immobilier.models');
+
 
 
 exports.create = (req, res, next)=>{
@@ -43,12 +46,12 @@ Immobilier.find(condition)
     }
     )})
 }
-/**
- * 
- exports.findOne = (req, res)=>{
-     
+exports.findOne = (req, res)=>{
+    
 }
 
+/**
+* 
 exports.update = (req, res)=>{
     
 }
